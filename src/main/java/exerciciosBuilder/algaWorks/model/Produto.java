@@ -1,15 +1,22 @@
 package exerciciosBuilder.algaWorks.model;
 
 import java.math.BigDecimal;
+import java.util.Properties;
 
 public class Produto {
-    // attributes
+    // atributes
     private String nome;
     private Integer quantidade;
-    private BigDecimal valor;
+    private BigDecimal valorUnitario;
+
+    // constructor
+    public Produto(String nome, Integer quantidade, BigDecimal valorUnitario) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.valorUnitario = valorUnitario;
+    }
 
     // getters and setters
-
     public String getNome() {
         return nome;
     }
@@ -26,11 +33,11 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public BigDecimal getValor() {
-        return valor;
+    public BigDecimal getValorUnitario() {
+        return valorUnitario;
     }
 
-    public void setValor(BigDecimal valor) {
-        this.valor = valor;
+    public void setValorUnitario(BigDecimal valorUnitario) {
+        this.valorUnitario = valorUnitario;
     }
 }

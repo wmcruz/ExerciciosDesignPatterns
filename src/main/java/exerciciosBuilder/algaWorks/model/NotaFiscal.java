@@ -1,45 +1,49 @@
 package exerciciosBuilder.algaWorks.model;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-public class NotaFiscal {
-    //attributes
-    private Long numeroNotaFiscal;
-    private Date dataEmissao;
-    private List<ItensProdutos> itensProdutos;
-    private Pessoa pessoa;
+public abstract class NotaFiscal {
+    // atributes
+    private Integer numero;
+    private Date dataDeEmissao;
+    private List<Produto> produtos;
+
+    public abstract BigDecimal calculoImposto(BigDecimal valor);
+
+    public BigDecimal getValorTotal() {
+        BigDecimal valorTotal = BigDecimal.ZERO;
+
+        for (Produto produto : produtos) {
+            valorTotal = valorTotal.add(produto.getValorUnitario().multiply(new BigDecimal(produto.getQuantidade())));
+        }
+
+        return valorTotal;
+    }
 
     // getters and setters
-    public Long getNumeroNotaFiscal() {
-        return numeroNotaFiscal;
+    public Date getDataDeEmissao() {
+        return dataDeEmissao;
     }
 
-    public void setNumeroNotaFiscal(Long numeroNotaFiscal) {
-        this.numeroNotaFiscal = numeroNotaFiscal;
+    public void setDataDeEmissao(Date dataDeEmissao) {
+        this.dataDeEmissao = dataDeEmissao;
     }
 
-    public Date getDataEmissao() {
-        return dataEmissao;
+    public Integer getNumero() {
+        return numero;
     }
 
-    public void setDataEmissao(Date dataEmissao) {
-        this.dataEmissao = dataEmissao;
+    public void setNumero(Integer numero) {
+        this.numero = numero;
     }
 
-    public List<ItensProdutos> getItensProdutos() {
-        return itensProdutos;
+    public List<Produto> getProdutos() {
+        return produtos;
     }
 
-    public void setItensProdutos(List<ItensProdutos> itensProdutos) {
-        this.itensProdutos = itensProdutos;
-    }
-
-    public Pessoa getPessoa() {
-        return pessoa;
-    }
-
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
+    public void setProdutos(List<Produto> produto) {
+        this.produtos = produto;
     }
 }
