@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.text.ParseException;
 import java.util.Date;
 
-public class TestBuilder {
+public class BuilderNotaFiscalExercicioAlgaWorksTest {
 
     @Test
     public void calcularNotaFiscalPessoaFisicaComNumeroComDataString() throws ParseException {
