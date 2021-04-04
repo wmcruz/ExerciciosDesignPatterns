@@ -1,4 +1,4 @@
-package exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.arquivo;
+package exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.implementacao.arquivo;
 
 import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.abstracao.PrintLog;
 

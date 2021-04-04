@@ -1,11 +1,12 @@
-package exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.arquivo;
+package exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.implementacao.console;
 
 import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.abstracao.Log;
 import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.abstracao.PrintLog;
 
-public class LogArquivo extends Log {
+public class LogConsole extends Log {
+
     @Override
     protected PrintLog geraLog() {
-        return new PrintLogArquivo();
+        return new PrintLogConsole();
     }
 }
