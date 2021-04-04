@@ -1,14 +1,14 @@
 package exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres;
 
-import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.arquivo.LogArquivo;
-import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.console.LogConsole;
+import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.implementacao.arquivo.LogArquivo;
+import exerciciosFactoryMethod.teachingPdf.factoryMethod.tresPontoTres.implementacao.console.LogConsole;
 
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainClasse {
+public class MainLog {
 
     public static void main(String[] args) {
         // processamento
