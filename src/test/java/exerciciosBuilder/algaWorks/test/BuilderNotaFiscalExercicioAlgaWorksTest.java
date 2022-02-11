@@ -1,6 +1,6 @@
 package exerciciosBuilder.algaWorks.test;
 
-import algaworks.builder.NotaFiscalBuilder;
+import algaworks.builder.builder.NotaFiscalBuilder;
 import algaworks.builder.model.NotaFiscal;
 import org.junit.Assert;
 import org.junit.Test;

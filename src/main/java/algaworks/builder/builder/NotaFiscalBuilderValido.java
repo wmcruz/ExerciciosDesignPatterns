@@ -1,4 +1,4 @@
-package algaworks.builder;
+package algaworks.builder.builder;
 
 import algaworks.builder.model.NotaFiscal;
 import algaworks.builder.model.Produto;
