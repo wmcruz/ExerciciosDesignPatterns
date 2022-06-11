@@ -1,4 +1,4 @@
-package algaworks.factoryMethod.meuExemplo;
+package algaworks.factoryMethod.exercicio1ponto3.meuExemplo;
 
 public class GerarLogConsole extends GeraLog {
 

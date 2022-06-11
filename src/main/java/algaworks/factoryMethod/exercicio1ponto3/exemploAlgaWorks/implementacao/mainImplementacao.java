@@ -1,6 +1,6 @@
-package algaworks.factoryMethod.exemploAlgaWorks.implementacao;
+package algaworks.factoryMethod.exercicio1ponto3.exemploAlgaWorks.implementacao;
 
-import algaworks.factoryMethod.exemploAlgaWorks.abstracao.Logger;
+import algaworks.factoryMethod.exercicio1ponto3.exemploAlgaWorks.abstracao.Logger;
 
 public class mainImplementacao {
     public static void main(String[] args) {
